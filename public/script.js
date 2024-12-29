@@ -3,7 +3,7 @@ const weatherContainer = document.querySelector('.weather-container');
 
 // Función para obtener los datos del clima desde el servidor
 async function obtenerClima() {
-    const respuesta = await fetch('/clima');
+    const respuesta = await fetch('https://caminosnaturales.onrender.com/clima');
     const datos = await respuesta.json();
     return datos;
 }
